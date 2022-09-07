@@ -1,0 +1,147 @@
+/* satisty */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+/* canarell */
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: "Satisfy", cursive;
+    /* font-family: "Cantarell", sans-serif; */
+    text-align: center;
+}
+
+.cover {
+    background: url("./images/cover.jpg");
+    height: 630px;
+    width: 100%;
+    color: #fff;
+    padding: 50px;
+}
+
+.main-title {
+    font-size: 96px;
+}
+
+.sub-title {
+    font-size: 36px;
+}
+
+.continents-container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.continents {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.continent-title {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.lighthouse-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.lighthouse-image {
+    background-image: url("./images/north-america-1.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.lighthouse-image img {
+    width: 300px;
+    height: 300px;
+}
+.lighthouse-text {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.lighthouse-text h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.lighthouse-text h4 {
+    font-size: 16px;
+}
+
+.lighthouse-text p {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.lighthouse-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lighthouse-button button {
+    color: #fff;
+    margin-top: 20px;
+    background-color: #0586ce;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out;
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    .continents {
+        padding: 20px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .lighthouse-card {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .lighthouse-image {
+        height: 300px;
+        width: 100%;
+    }
+}
