@@ -98,7 +98,7 @@ body {
     height: auto;
     margin: 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #0176b5;
     overflow: hidden;
 
     transition: all ease-in-out 0.3s;
@@ -281,6 +281,7 @@ footer ul a {
         width: 100%;
         margin: 0;
         margin-bottom: 20px;
+        background-color: #f1fafe;
     }
 
     .lighthouse-image {
