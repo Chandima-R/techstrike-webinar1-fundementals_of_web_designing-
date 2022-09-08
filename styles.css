@@ -23,9 +23,12 @@ body {
 }
 
 .cover {
+    width: 100%;
+}
+
+.cover1 {
     background: url("./images/cover.jpg");
     height: 630px;
-    width: 100%;
     color: #fff;
     padding: 50px;
 }
@@ -35,6 +38,30 @@ body {
 }
 
 .sub-title {
+    font-size: 36px;
+}
+
+.cover2 {
+    background: url("./images/cover2.jpg");
+    height: 500px;
+    color: #fff;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px;
+}
+
+.cover2:nth-child(1) {
+    font-size: 60px;
+}
+
+.cover2:nth-child(2) {
+    font-size: 48px;
+}
+
+.cover2:nth-child(3) {
     font-size: 36px;
 }
 
@@ -58,15 +85,17 @@ body {
 
 .card-container {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .lighthouse-card {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 48%;
     height: auto;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
     border: 1px solid black;
     overflow: hidden;
@@ -74,11 +103,42 @@ body {
 }
 
 .lighthouse-image {
-    background-image: url("./images/north-america-1.jpg");
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+.asia-1 {
+    background-image: url("./images/galle-lighthouse.jpg");
+}
+
+.asia-2 {
+    background-image: url("./images/bolinao.jpg");
+}
+
+.asia-3 {
+    background-image: url("./images/al-ayjah.jpg");
+}
+
+.asia-4 {
+    background-image: url("./images/aguada.jpg");
+}
+
+.europe-1 {
+    background-image: url("./images/golloway.jpg");
+}
+
+.europe-2 {
+    background-image: url("./images/porer.jpg");
+}
+
+.europe-3 {
+    background-image: url("./images/twar\ mawr.jpg");
+}
+
+.europe-4 {
+    background-image: url("./images/kallur.jpg");
 }
 
 .lighthouse-image img {
@@ -92,16 +152,18 @@ body {
 
 .lighthouse-text h3 {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .lighthouse-text h4 {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: "Cantarell", sans-serif;
 }
 
 .lighthouse-text p {
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 15px;
+    font-family: "Cantarell", sans-serif;
 }
 
 .lighthouse-button {
@@ -112,25 +174,57 @@ body {
 .lighthouse-button button {
     color: #fff;
     margin-top: 20px;
-    background-color: #0586ce;
+    background-color: #002d46;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    padding: 5px 16px;
+    padding: 8px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
     transition: all 300ms ease-in-out;
     font-size: 12px;
 }
 
-@media (max-width: 1000px) {
+footer {
+    background-color: #002d46;
+    color: #fff;
+    display: flex;
+    padding: 50px;
+    text-align: left;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul a {
+    color: #fff;
+    font-family: "Cantarell", sans-serif;
+    text-decoration: none;
+}
+
+.footer-left,
+.footer-right {
+    width: 100%;
+}
+
+.footer-bottom {
+    padding: 10px;
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cantarell", sans-serif;
+}
+
+.footer-bottom span {
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
     .continents {
         padding: 20px;
-    }
-
-    .card-container {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
     }
 
     .lighthouse-card {
@@ -143,5 +237,9 @@ body {
     .lighthouse-image {
         height: 300px;
         width: 100%;
+    }
+
+    .lighthouse-text {
+        padding: 10px;
     }
 }
