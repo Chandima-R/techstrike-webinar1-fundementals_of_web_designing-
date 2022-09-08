@@ -53,16 +53,16 @@ body {
     padding: 80px;
 }
 
-.cover2:nth-child(1) {
-    font-size: 60px;
+.cover2-title1 {
+    font-size: 72px;
 }
 
-.cover2:nth-child(2) {
-    font-size: 48px;
+.cover2-title2 {
+    font-size: 40px;
 }
 
-.cover2:nth-child(3) {
-    font-size: 36px;
+.cover2-title3 {
+    font-size: 22px;
 }
 
 .continents-container {
@@ -88,6 +88,7 @@ body {
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
+    cursor: pointer;
 }
 
 .lighthouse-card {
@@ -99,6 +100,11 @@ body {
     border-radius: 10px;
     border: 1px solid black;
     overflow: hidden;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.lighthouse-card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -107,6 +113,7 @@ body {
     height: 100%;
     background-position: center;
     background-size: cover;
+    transition: all ease-in-out 0.3s;
 }
 
 .asia-1 {
@@ -148,11 +155,13 @@ body {
 .lighthouse-text {
     width: 100%;
     padding: 10px 20px;
+    text-align: left;
 }
 
 .lighthouse-text h3 {
     margin-top: 20px;
     font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .lighthouse-text h4 {
@@ -175,13 +184,20 @@ body {
     color: #fff;
     margin-top: 20px;
     background-color: #002d46;
-    border: none;
+    border: 1px solid #002d46;
     border-radius: 50px;
     cursor: pointer;
     padding: 8px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
     transition: all 300ms ease-in-out;
     font-size: 12px;
+    transition: all ease-in-out 0.3s;
+}
+
+.lighthouse-button button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #002d46;
 }
 
 footer {
@@ -190,6 +206,7 @@ footer {
     display: flex;
     padding: 50px;
     text-align: left;
+    justify-content: space-between;
 }
 
 footer ul {
@@ -204,7 +221,26 @@ footer ul a {
 
 .footer-left,
 .footer-right {
+    width: 50%;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-center {
     width: 100%;
+}
+
+.footer-right p {
+    font-family: "Cantarell", sans-serif;
+    cursor: pointer;
+}
+
+.footer-center {
+    font-family: "Cantarell", sans-serif;
+    font-size: 10px;
+    text-align: center;
 }
 
 .footer-bottom {
@@ -218,11 +254,24 @@ footer ul a {
 
 .footer-bottom span {
     font-style: italic;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     cursor: pointer;
 }
 
 @media (max-width: 1200px) {
+    .main-title {
+        padding-top: 40px;
+        font-size: 60px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+    }
+
+    .cover1 {
+        padding: 10px;
+    }
+
     .continents {
         padding: 20px;
     }
@@ -241,5 +290,63 @@ footer ul a {
 
     .lighthouse-text {
         padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer h1 {
+        font-size: 18px;
+    }
+
+    .continent-title {
+        font-size: 38px;
+    }
+
+    .lighthouse-text h3 {
+        font-size: 20px;
+    }
+
+    .lighthouse-text h4 {
+        font-size: 14px;
+    }
+
+    .lighthouse-text p {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 10px 20px;
+    }
+
+    footer ul a {
+        font-size: 12px;
+    }
+
+    .footer-left,
+    .footer-right,
+    .footer-center {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer-left {
+        margin-bottom: 10px;
+    }
+
+    .footer-right p {
+        font-size: 12px;
+    }
+
+    .footer-center {
+        font-size: 10px;
+        text-align: left;
+        display: none;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
     }
 }
